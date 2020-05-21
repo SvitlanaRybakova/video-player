@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video player</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Свой плеер</h1>
+
+        <video width="400" height="300" poster="" id="video-player">
+            <source src="Ice Skating Competition in Malmo.mp4" type="video/mp4">  
+        </video>
+
+        <div id="out"></div>
+        
+        <div>
+            <progress id="progress" max="100" value="0" style="width:50%;"></progress>
+        
+        </div>
+
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="stop">Stop</button>
+        <button id="speed-up">Speed-up</button>
+        <button id="speed-down">Speed-down</button>
+        <button id="speed-normal">Ususal speed</button>
+        <input type="range" id="volume" min=0 max=100>Volume
+
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
